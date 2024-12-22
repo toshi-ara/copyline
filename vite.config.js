@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from "vite"
 
 export default defineConfig({
@@ -6,6 +7,9 @@ export default defineConfig({
     build : {
         outDir: "../docs",
         emptyOutDir: true,
-    }
+    },
+    test: {
+        include: ["../test/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    },
 })
 
