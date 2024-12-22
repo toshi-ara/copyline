@@ -6,7 +6,13 @@ export function getTextAsList(text: string): string[] {
 
 // get valid line (boolean)
 export function isValidLine(text: string): boolean {
-    return (text != "" && !text.match(/^#+/)) ? true : false;
+    if (text == "") {
+        return false
+    } else if (text.match(/^#+|^\(begin\)|^\(end\)/)) {
+        return false
+    } else {
+        return true
+    }
 }
 
 // drop unvalid lines
