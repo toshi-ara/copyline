@@ -9,7 +9,7 @@ export default defineConfig({
         emptyOutDir: true,
     },
     test: {
-        include: ["../test/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+        root: "test",
     },
 })
 
