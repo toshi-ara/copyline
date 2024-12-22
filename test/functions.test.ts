@@ -33,12 +33,16 @@ const text21_1 = "";
 const text21_2 = "#";
 const text21_3 = "##";
 const text21_4 = "# foo";
+const text21_5 = "(begin)";
+const text21_6 = "(end)";
 
 // true
 const text22_1 = "+ ";
 const text22_2 = "1.";
 const text22_3 = "a.";
 const text22_4 = "  #";
+const text22_5 = " (begin)";
+const text22_6 = " (end)";
 
 
 // for getValidList
@@ -85,11 +89,15 @@ describe("Check functions in functions.ts", () => {
         expect(isValidLine(text21_2)).toEqual(false);
         expect(isValidLine(text21_3)).toEqual(false);
         expect(isValidLine(text21_4)).toEqual(false);
+        expect(isValidLine(text21_5)).toEqual(false);
+        expect(isValidLine(text21_6)).toEqual(false);
 
         expect(isValidLine(text22_1)).toEqual(true);
         expect(isValidLine(text22_2)).toEqual(true);
         expect(isValidLine(text22_3)).toEqual(true);
         expect(isValidLine(text22_4)).toEqual(true);
+        expect(isValidLine(text22_5)).toEqual(true);
+        expect(isValidLine(text22_6)).toEqual(true);
     })
 
     it("Check getValidList function", () => {
