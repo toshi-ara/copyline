@@ -1,5 +1,10 @@
 # copyline
 
+このプログラムのメンテナンスは終了しました
+
+[CopyLine-cs](https://github.com/toshi-ara/CopyLine-cs)
+を使用して下さい
+
 ## 概要
 + テキストボックスに入力したテキストの内容を
   1行ずつ正規表現で切り出してから
